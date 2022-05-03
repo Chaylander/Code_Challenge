@@ -1,5 +1,5 @@
 const Reader = require("./../../lib/utils/Reader");
-const StudentServices = require("./../../../code_challenge/lib/Services/StudentServices");
+const StudentServices = require("./../../lib/Services/StudentServices");
 
 describe("Test para la clase StudentServices", () => {
     test("Requerimiento 1: Retornar el arreglo con los estudiantes", () => {
