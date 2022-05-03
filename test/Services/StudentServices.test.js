@@ -12,6 +12,11 @@ describe("Test para la clase StudentServices", () => {
         const StudentsMailWithCertification = StudentServices.getStudentsMailWithCertification(students, true);
         expect(StudentsMailWithCertification.length).toBe(29);
     });
+    test("Requerimiento 3: Obtener estudiantes con mas credits > 500", () => {
+        const students = [{"name":"Juan","lastname":"Perez", "credits":501, "haveCertification":true}];
+        const StudentsWithCredits = StudentServices.getStudentsWithCredits(students, 500);
+        expect(StudentsWithCredits.length).toBe(1);
+    });
 
 
 
